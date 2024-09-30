@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('img.jpg') center center/cover, linear-gradient(to right, #0b3b5c, #000b49);
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.logo-container {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    color: #1a0346; 
+    margin: 0; 
+    letter-spacing: 2px; 
+    text-transform: uppercase;
+    font-weight: 700; 
+    font-style: italic;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    color: #666; 
+}
+
+
+.container {
+    display: flex;
+    animation: fadeInUp 1s ease; 
+
+}
+
+.form-container {
+    background-color: rgba(10, 10, 10, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+    animation: fadeInUp 3s ease; 
+}
+
+h2 {
+    color: #fff; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #fff; 
+}
+
+input,
+textarea,
+select {
+    padding: 8px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 1px solid #fff; 
+    color: #333; 
+    animation: fadeIn 0.6s ease;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    animation: scaleUp 0.3s ease; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#companyFields,
+#passengerFields {
+    display: none;
+}
+
+#companyFields label,
+#passengerFields label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}

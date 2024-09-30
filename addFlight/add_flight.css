@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #040355, #001f3f); 
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: linear-gradient(to right, #004080, #0066cc);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease;
+}
+
+h2, label {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 3s ease;
+}
+
+input, textarea {
+    padding: 12px; 
+    margin-bottom: 16px;
+    border: 1px solid #4682b4; 
+    border-radius: 6px; 
+    background-color: #2e3f5e; 
+    color: #fff; 
+}
+
+button {
+    padding: 14px;
+    background-color: #0066cc; 
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.logo-container {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    color: #3489d8; 
+    margin: 0; 
+    letter-spacing: 2px; 
+    text-transform: uppercase;
+    font-weight: 700; 
+    font-style: italic;
+}
+button:hover {
+    background-color: #004080; 
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

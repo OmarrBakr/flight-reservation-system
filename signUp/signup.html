@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Our Travel Community!</h1>
+            <p>Join us to explore exciting destinations and plan your next adventure.</p>
+        </header>
+        <div id="signupPage" class="form-container">
+            <h2>Sign Up</h2>
+            <form id="signupForm" action="signup.php" method="post" enctype="multipart/form-data">
+                <label for="signupName">Name:</label>
+                <input type="text" id="signupName" name="signupName" required>
+            
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" name="signupEmail" required>
+            
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+            
+                <label for="signupTel">Telephone:</label>
+                <input type="tel" id="signupTel" name="signupTel" required>
+            
+                <label for="signupType">Account Type:</label>
+                <select id="signupType" name="signupType" onchange="updateForm()" required>
+                    <option value="" disabled selected>Select an account type</option>
+                    <option value="company">Company</option>
+                    <option value="passenger">Passenger</option>
+                </select>
+            
+                <div id="companyFields" style="display: none;">
+                    <label for="companyAddress">Address:</label>
+                    <input type="text" id="companyAddress" name="companyAddress" >
+            
+                    <label for="companyBio">Bio:</label>
+                    <textarea id="companyBio" name="companyBio" ></textarea>
+            
+                    <label for="companyLocation">Location (optional):</label>
+                    <input type="text" id="companyLocation" name="companyLocation">
+            
+                    <label for="companyLogo">Logo image:</label>
+                    <input type="file" id="companyLogo" name="companyLogo" accept=".jpg, .jpeg, .png" >
+                </div>
+            
+                <div id="passengerFields" style="display: none;">
+                    <label for="passengerPhoto">Photo:</label>
+                    <input type="file" id="passengerPhoto" name="passengerPhoto" accept=".jpg, .jpeg, .png">
+            
+                    <label for="passengerPassport">Passport Image:</label>
+                    <input type="file" id="passengerPassport" name="passengerPassport" accept=".jpg, .jpeg, .png">
+                </div>
+            
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="../login/login.html">Login</a></p>
+        </div>
+        <div class="logo-container">
+            <p class="logo">TouriTrip</p>
+        </div>
+    </div>
+
+    <script>
+        function showAdditionalInfo() {
+            const accountType = document.getElementById('signupType').value;
+
+            if (accountType === 'company') {
+                window.open('company_signup.html', '_blank');
+            } else if (accountType === 'passenger') {
+                window.open('passenger_signup.html', '_blank');
+            }
+        }
+
+        function updateForm() {
+            const accountType = document.getElementById('signupType').value;
+            const companyFields = document.getElementById('companyFields');
+            const passengerFields = document.getElementById('passengerFields');
+
+            if (accountType === 'company') {
+                companyFields.style.display = 'block';
+                passengerFields.style.display = 'none';
+            } else if (accountType === 'passenger') {
+                companyFields.style.display = 'none';
+                passengerFields.style.display = 'block';
+            } else {
+                companyFields.style.display = 'none';
+                passengerFields.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

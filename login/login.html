@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div id="loginPage" class="form-container">
+            <div class="welcome-message">
+                <h1>Welcome to TouriTrip!</h1>
+                <p>Explore new horizons with our travel services.</p>
+            </div>
+            <h2>Login</h2>
+            <form id="loginForm" action="login.php" method="post">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="../signUp/signup.html">Sign Up</a></p>
+        </div>
+        <div class="logo-container">
+            <p class="logo">TouriTrip</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

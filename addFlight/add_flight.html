@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Flight</title>
+    <link rel="stylesheet" href="add_flight.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add Flight</h2>
+        <form action="add_flight_process.php" method="post">
+            <label for="flightName">Name:</label>
+            <input type="text" id="flightName" name="flightName" required>
+
+            <label for="flightId">Id:</label>
+            <input type="text" id="flightId" name="flightId" required>
+
+            <label for="flightItinerary">Itinerary:</label>
+            <textarea id="flightItinerary" name="flightItinerary" required></textarea>
+
+            <label for="flightFees">Fees:</label>
+            <input type="number" id="flightFees" name="flightFees" required min="1">
+
+            <label for="passengerCount"># Passengers:</label>
+            <input type="number" id="passengerCount" name="passengerCount" required>
+
+            <label for="flightStart">Start Time:</label>
+            <input type="datetime-local" id="flightStart" name="flightStart" required>
+
+            <label for="flightEnd">End Time:</label>
+            <input type="datetime-local" id="flightEnd" name="flightEnd" required>
+
+            <button type="submit">Add Flight</button>
+        </form>
+        <div class="logo-container">
+            <p class="logo">TouriTrip</p>
+        </div>
+    </div>
+</body>
+</html>

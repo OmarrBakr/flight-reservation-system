@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #040355, #001f3f); 
+    margin: 0;
+    backdrop-filter: blur(5px);
+
+}
+.logo-container {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    color: #3489d8; 
+    margin: 0; 
+    letter-spacing: 2px; 
+    text-transform: uppercase;
+    font-weight: 700; 
+    font-style: italic;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: linear-gradient(to right, #004080, #0066cc);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease
+
+}
+
+h2,
+h3 {
+    text-align: center;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.current-logo {
+    max-width: 100px;
+    margin-bottom: 16px;
+}
+
+button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.flights-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flights-list li {
+    margin-bottom: 8px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #555;
+}
+.flight-list-container {
+    max-width: 800px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
