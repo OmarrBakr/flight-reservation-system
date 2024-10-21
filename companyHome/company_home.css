@@ -1,30 +1,14 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background: linear-gradient(to right, #040355, #001f3f); 
-    color: #fff; 
-}
-.logo-container {
-    position: absolute;
-    top: 40px;
-    left: 30px;
+    background-color: #f5f5f5;
 }
 
-.logo {
-    font-family: 'Roboto', sans-serif;
-    font-size: 72px;
-    color: #0a0961; 
-    margin: 0; 
-    letter-spacing: 2px; 
-    text-transform: uppercase;
-    font-weight: 700; 
-    font-style: italic;
-}
 .company-home-container {
     max-width: 1800px;
     margin: 50px auto;
     padding: 20px;
-    background: linear-gradient(to right, #004080, #0066cc);
+    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -44,7 +28,6 @@ body {
 .company-name {
     font-size: 24px;
     margin-top: 10px;
-    color: #fff; 
 }
 
 .company-navigation ul {
@@ -72,12 +55,11 @@ th, td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
-    color: #fff; 
 }
 
 th {
-    background-color: #001f3f; 
-    color: #fff;
+    background-color: #f2f2f2;
+    color: #555;
 }
 
 .clickable-row {
@@ -86,21 +68,22 @@ th {
 }
 
 .clickable-row:hover {
-    background-color: #003366; 
+    background-color: #e0e0e0;
 }
 
 #flight-details {
     display: none;
     padding: 20px;
-    background-color: #001f3f; 
+    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #flight-details h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #fff; 
+    color: #333;
 }
+
 
 .company-navigation ul {
     list-style: none;

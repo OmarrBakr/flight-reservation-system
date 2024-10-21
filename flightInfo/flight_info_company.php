@@ -48,9 +48,6 @@ $conn->close();
 
 <div class="container">
     <h2>Flight Info</h2>
-    <div class="logo-container">
-        <p class="logo">TouriTrip</p>
-    </div>
     <div class="flight-details">
         <strong>ID:</strong> <?php echo $flightRow['id']; ?><br>
         <strong>Name:</strong> <?php echo $flightRow['name']; ?><br>

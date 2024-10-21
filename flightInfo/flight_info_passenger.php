@@ -49,9 +49,6 @@ $conn->close();
 
 <div class="container">
     <h2>Flight Info</h2>
-    <div class="logo-container">
-        <p class="logo">TouriTrip</p>
-    </div>
     <table class="flight-details">
         <tr>
             <th>ID</th>

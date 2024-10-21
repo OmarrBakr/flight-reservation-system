@@ -37,10 +37,7 @@ $conn->close();
 <body>
 
 <div class="container">
-    <div class="logo-container">
-            <p class="logo">TouriTrip</p>
-    </div>
-    <h2>Messages</h2>
+    <h2>Company Messages</h2>
     <table>
         <thead>
             <tr>

@@ -53,9 +53,6 @@ $conn->close();
 
 <div class="container">
     <h2>Messages with <?php echo $companyName; ?></h2>
-    <div class="logo-container">
-        <p class="logo">TouriTrip</p>
-    </div>
     <div class="message-list" id="message-list">
         <?php foreach ($messages as $message) : ?>
             <div class="message">

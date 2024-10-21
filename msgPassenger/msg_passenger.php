@@ -2,19 +2,21 @@
 include_once("../db_connection/db_connection.php");
 session_start();
 
+// Function to send a new message
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['message'])) {
     $messageInput = $_POST['message'];
-    $companyId = $_SESSION['companyId'];
+    $companyId = $_SESSION['companyId']; // Use company's ID as sender
     $passengerId = $_POST['passengerId'];
 
-
+    // Assuming you have the companyId, passengerId, and messageInput
     $insertMessageSql = "INSERT INTO messages (sender_id, receiver_id, message) VALUES ($companyId, $passengerId, '$messageInput')";
     $conn->query($insertMessageSql);
 }
 
+// Function to update the message list
 function getMessages($passengerId, $conn)
 {
-    $companyId = $_SESSION['companyId'];
+    $companyId = $_SESSION['companyId']; // Use company's ID as sender
     $messagesSql = "SELECT * FROM messages WHERE (sender_id = $companyId AND receiver_id = $passengerId) OR (sender_id = $passengerId AND receiver_id = $companyId) ORDER BY timestamp";
     $messagesResult = $conn->query($messagesSql);
     $messages = [];
@@ -30,6 +32,7 @@ function getMessages($passengerId, $conn)
 
 $passengerId = $_GET['passengerId'];
 
+// Fetch the passenger name based on passengerId
 $passengerNameSql = "SELECT name FROM Passenger WHERE id = $passengerId";
 $passengerNameResult = $conn->query($passengerNameSql);
 
@@ -56,9 +59,6 @@ $conn->close();
 
 <div class="container">
     <h2>Messages with <?php echo $passengerName; ?></h2>
-    <div class="logo-container">
-        <p class="logo">TouriTrip</p>
-    </div>
     <div class="message-list" id="message-list">
         <?php foreach ($messages as $message) : ?>
             <div class="message">

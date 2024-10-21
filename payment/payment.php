@@ -19,9 +19,6 @@ $conn->close();
 
 <div class="container">
     <h2>Select Payment Method</h2>
-    <div class="logo-container">
-            <p class="logo">TouriTrip</p>
-    </div>
 
     <div class="payment-options">
         <button onclick="choosePayment('cash')">Pay with Cash</button><br>

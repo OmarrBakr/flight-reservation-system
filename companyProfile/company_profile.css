@@ -1,41 +1,22 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #040355, #001f3f); 
+    background-color: #f4f4f4;
     margin: 0;
-    backdrop-filter: blur(5px);
-
-}
-.logo-container {
-    position: absolute;
-    top: 0px;
-    left: 20px;
 }
 
-.logo {
-    font-family: 'Roboto', sans-serif;
-    font-size: 72px;
-    color: #3489d8; 
-    margin: 0; 
-    letter-spacing: 2px; 
-    text-transform: uppercase;
-    font-weight: 700; 
-    font-style: italic;
-}
 .container {
     max-width: 800px;
     margin: 50px auto;
-    background: linear-gradient(to right, #004080, #0066cc);
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 1s ease
-
 }
 
 h2,
 h3 {
     text-align: center;
-    color: #ffffff;
+    color: #333;
 }
 
 form {
@@ -45,7 +26,7 @@ form {
 
 label {
     margin-bottom: 8px;
-    color: #ffffff;
+    color: #333;
 }
 
 input,
@@ -100,24 +81,4 @@ th {
 }
 .flight-list-container {
     max-width: 800px;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }

@@ -2,40 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #040355, #001f3f); 
+    background-color: #f4f4f4;
 }
 
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 1s ease;
-    background: linear-gradient(to right, #004080, #0066cc);
-
-
-}
-.logo-container {
-    position: absolute;
-    top: 0px;
-    left: 20px;
 }
 
-.logo {
-    font-family: 'Roboto', sans-serif;
-    font-size: 72px;
-    color: #3489d8; 
-    margin: 0; 
-    letter-spacing: 2px; 
-    text-transform: uppercase;
-    font-weight: 700; 
-    font-style: italic;
-}
 form {
     margin-bottom: 20px;
-    animation: fadeIn 3s ease
-
 }
 
 label {
@@ -97,24 +77,4 @@ th {
 
 .clickable-row:hover {
     background-color: #e0e0e0;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }

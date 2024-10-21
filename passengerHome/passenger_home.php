@@ -68,9 +68,6 @@ $conn->close();
 <body>
     <div class="container">
         <h2>Welcome, <?php echo $passengerName; ?>!</h2>
-        <div class="logo-container">
-            <p class="logo">TouriTrip</p>
-        </div>
         <div class="passenger-info">
             <img src="../uploads/passengerImage/<?php echo $passengerPhoto; ?>" alt="User Image" class="user-image">
             <div class="user-details">

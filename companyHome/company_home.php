@@ -38,10 +38,6 @@ $conn->close();
 </head>
 <body>
     <div class="company-home-container">
-        <div class="logo-container">
-             <p class="logo">TouriTrip</p>
-        </div>
-        
         <div class="company-header">
             <img src="../uploads/companyLogo/<?php echo $companyLogo; ?>" alt="Company Logo" class="company-logo">
             <h1 class="company-name"><?php echo $companyName; ?></h1>

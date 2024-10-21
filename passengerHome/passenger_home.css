@@ -1,24 +1,23 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #040355, #001f3f); 
+    background-color: #f4f4f4;
     margin: 0;
 }
 
 .container {
     max-width: 1600px;
     margin: 50px auto;
-    background: linear-gradient(to right, #004080, #0066cc);
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 3s ease;
-
 }
 
 h2 {
     text-align: center;
     color: #333;
 }
+
 
 .passenger-info {
     display: flex;
@@ -119,41 +118,7 @@ th {
     color: #fff;
     transition: background-color 0.3s ease;
 }
-.logo-container {
-    position: absolute;
-    top: 45px;
-    left: 140px;
-}
 
-.logo {
-    font-family: 'Roboto', sans-serif;
-    font-size: 72px;
-    color: #3489d8; 
-    margin: 0; 
-    letter-spacing: 2px; 
-    text-transform: uppercase;
-    font-weight: 700; 
-    font-style: italic;
-}
 .company-navigation a:hover {
     background-color: #555;
-}
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }

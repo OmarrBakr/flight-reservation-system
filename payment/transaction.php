@@ -76,9 +76,6 @@ $conn->close();
 </head>
 <body>
     <div class="container">
-        <div class="logo-container">
-            <p class="logo">TouriTrip</p>
-        </div>
         <h2><?php echo $paymentResult; ?></h2>
         <button type="button" onclick="redirect()">Proceed</button>
     </div>

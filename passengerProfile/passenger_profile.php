@@ -34,9 +34,6 @@ $conn->close();
 <body>
     <div class="container">
         <h2>Passenger Profile</h2>
-        <div class="logo-container">
-            <p class="logo">TouriTrip</p>
-        </div>
         <form action="update_passenger_profile.php" method="post" enctype="multipart/form-data">
             <label for="passengerName">Name:</label>
             <input type="text" id="passengerName" name="passengerName" value="<?php echo $passengerName; ?>">

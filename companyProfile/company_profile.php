@@ -37,9 +37,6 @@ $conn->close();
 </head>
 <body>
     <div class="container">
-        <div class="logo-container">
-            <p class="logo">TouriTrip</p>
-        </div>
         <h2>Company Profile</h2>
         <form action="update_company_profile.php" method="post" enctype="multipart/form-data">
             <label for="companyName">Name:</label>

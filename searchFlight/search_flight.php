@@ -6,8 +6,7 @@ if (isset($_POST['search'])) {
     $to = $_POST['to'];
     $searchFlightsSql = "SELECT * FROM flight WHERE 
                          SUBSTRING_INDEX(itinerary, '-->', 1) = '$from' AND 
-                         SUBSTRING_INDEX(itinerary, '-->', -1) = '$to' AND
-                         start_time > NOW()";
+                         SUBSTRING_INDEX(itinerary, '-->', -1) = '$to'";
     $searchFlightsResult = $conn->query($searchFlightsSql);
 }
 ?>
@@ -22,9 +21,6 @@ if (isset($_POST['search'])) {
 </head>
 <body>
     <div class="container">
-        <div class="logo-container">
-            <p class="logo">TouriTrip</p>
-        </div>
     <div class="search-flight-container">
         <h2>Search Flights</h2>
         <form method="post" action="">
@@ -69,7 +65,7 @@ if (isset($_POST['search'])) {
             </table>
         <?php elseif (isset($searchFlightsResult)): ?>
             <p>No flights found for the specified itinerary.</p>
-        <?php endif; ?> 
+        <?php endif; ?>
     </div>
     </div>
     <script>
